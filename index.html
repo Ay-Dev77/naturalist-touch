@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="natralist-touch.enc" type="image/x-icon">
+  <title>Naturalist Touch</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&family=Teko:wght@400;500;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="header">
+    <div class="main-header">
+      <a class="page-link" onclick="scrollToTarget0()">Accueil</a>
+      <a class="page-link" onclick="scrollToTarget()">Mon Métier</a>
+      <a class="page-link" onclick="scrollToTarget2()">Mes Produits</a>
+      <a class="page-link" onclick="scrollToTarget3()">Me Contacter</a>
+    </div>
+  </div>
+  
+  <div class="first-page" id='scroll-target0'>
+    <div class="brand-title">
+      <div class="help-scroll" id="scroll-target0"></div>
+      <p class="website-title">NATURALIST TOUCH</p>
+      <p class="slogan">Beauty with no compromise</p>
+      <div class="first-buttons">
+        <button class="contact-me-button" onclick="scrollToTarget3()">Me Contacter</button>
+      <button class="continue-button" onclick="scrollToTarget()">⬇️</button>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-button" id="scrollButton">⬆️</a></button>
+  
+  <div class="second-page" >
+    <div class="help-scroll" id="scroll-target"></div>
+    <div class="my-profession">
+      <p class="second-title">Mon Métier</p>
+      <p class="profession-presentation">
+        À Rabat, nos produits nés de l'artisanat. Captivent par leurs formules naturelles et bienfaisantes. Guidés par l'amour de la beauté, nous nous engageons envers la qualité, offrant une expérience sensorielle et émotionnelle. Découvrez une transformation subtile, où chaque création reflète notre passion pour l'estime de soi. Bienvenue dans notre métier, où la beauté devient une célébration authentique, au cœur de Rabat.</p>
+        <button class="continue-button" onclick="scrollToTarget2()">⬇️</button>
+    </div>
+  </div>
+
+  <div class="third-page">
+    <div class="help-scroll" id="scroll-target2"></div>
+    <div class="brand-title">
+      <p class="third-title">Mes Produits</p>
+      <p class="product-presentation">Naturalist Touch, où la beauté rencontre la nature. Nos produits sont 100% bio, élaborés à Rabat avec soin et dévouement. Engagés envers la qualité artisanale, nous sélectionnons attentivement des ingrédients naturels pour offrir une expérience beauté authentique. Explorez notre gamme pour une peau éclatante, sans compromis sur la pureté et l'efficacité. Reconnectez-vous à la nature, révélez votre beauté naturelle avec Naturalist Touch.</p>
+      <button class="continue-button" onclick="scrollToTarget3()">⬇️</button>
+    </div>
+  </div>
+
+  <div class="fourth-page">
+    <div class="help-scroll" id="scroll-target3"></div>
+    <div class="brand-title">
+      <p class="contact-title">Me Contacter</p>
+      <div class="logo-div">
+        <img class="contact-photo" src="natralist-touch.enc">
+      </div>
+      <div class="link-box">
+        <p class="contact-link0">Mail : naturalist.touch@gmail.com</p>
+        <p class="contact-link">Instagram : <a style="color: white;" href="">Naturalist Touch</a></p>
+        <p class="contact-link2">Facebook : <a style="color: white;" href="">Naturalist Touch</a></p>
+      </div>
+
+    </div>
+  </div>
+  <script>
+      document.getElementById('scrollButton').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    function scrollToTarget0() {
+      const targetElement = document.getElementById('scroll-target0');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToTarget() {
+      const targetElement = document.getElementById('scroll-target');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToTarget2() {
+      const targetElement = document.getElementById('scroll-target2');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToTarget3() {
+      const targetElement = document.getElementById('scroll-target3');
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

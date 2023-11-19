@@ -1,0 +1,226 @@
+body {
+  background-color: black;
+  margin-bottom: 100px;
+}
+p {
+  color: white;
+  font-family: Playfair Display, Arial;
+}
+.header {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 2;
+  justify-content: center;
+}
+.main-header {
+  height: 55px;
+  width: 600px;
+  background-color: #00000080;
+  text-align: center;
+  border-radius: 27px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+.page-link {
+  margin-top: 15px;
+  font-family: Playfair Display;
+  cursor: pointer;
+  color: white;
+}
+.page-link:hover {
+  text-decoration: underline;
+}
+.brand-title {
+  text-align: center;
+  align-items: center;
+}
+.website-title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.slogan {
+  text-align: center;
+  font-size: 25px;
+}
+.contact-me-button {
+  height: 36px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  font-family: Playfair Display;
+  border: solid;
+  border-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border-width: 1px;
+  margin-top: 20px;
+  transition: background-color 1s, color 1s, box-shadow 1s;
+}
+.contact-me-button:hover {
+  border: none;
+  color: black;
+  background-color: white;
+  box-shadow: 5px 4px 7px 1px rgb(85, 85, 85);
+}
+.continue-button {
+  height: 55px;
+  width: 55px;
+  border: none;
+  border-width: 3px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: border 1s, border-color 1s, background-color 1s;
+}
+.continue-button:hover {
+  background-color: black;
+  border: solid;
+  border-color: white;
+}
+.continue-icon {
+  height: 25px;
+  margin-top: 5px;
+}
+.first-buttons {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.second-page {
+  margin-top: 300px;
+}
+.help-scroll {
+  height: 100px;
+}
+.second-title {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.profession-presentation {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 40px;
+}
+.third-page {
+  margin-top: 300px;
+}
+.third-title {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.product-presentation {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 40px;
+}
+.fourth-page {
+  margin-top: 300px;
+}
+.contact-photo {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  vertical-align:top;
+  display: inline-block;
+  height: 200px;
+  border-radius: 50%;
+}
+.contact-title {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+.logo-div {
+  margin: 0 auto;
+  width: 200px;
+}
+.link-box {
+  display: inline-block;
+  height: 200px;
+}
+.contact-link,
+.contact-link2,
+.contact-link0 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.scroll-button {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 10000px;
+  border: none;
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  transition: border 1s, border-color 1s, background-color 1s;
+}
+.scroll-button:hover {
+  background-color: black;
+  border: solid;
+  border-color: white;
+}
+@media screen and (max-width: 1024px) {
+  .main-header {
+    width: fit-content;
+    font-size: 15px;
+    height: 55px;
+  }
+  .page-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .product-presentation,
+  .profession-presentation {
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 15px;
+  }
+  .website-title,
+  .second-title,
+  .third-title,
+  .contact-title {
+    font-size: 40px;
+  }
+  .slogan {
+    font-size: 30px;
+  }
+  .contact-photo {
+    height: 150px;
+  }
+  .contact-link,
+  .contact-link2,
+  .contact-link0 {
+    font-size: 20px;
+}
+.continue-button {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+}
